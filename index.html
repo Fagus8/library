@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ბიბლიოთეკის მართვის სისტემა</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>📚 ბიბლიოთეკის მართვის სისტემა</h1>
+
+        <!-- ახალი წიგნის დამატების ფორმა -->
+        <form id="book-form" class="card">
+            <h2>ახალი წიგნის დამატება</h2>
+            
+            <div class="form-group">
+                <label for="title">წიგნის სათაური:</label>
+                <input type="text" id="title" required placeholder="მაგ: ვეფხისტყაოსანი">
+            </div>
+
+            <div class="form-group">
+                <label for="author">ავტორი:</label>
+                <input type="text" id="author" required placeholder="მაგ: შოთა რუსთაველი">
+            </div>
+
+            <div class="form-group">
+                <label for="year">გამოცემის წელი:</label>
+                <input type="number" id="year" required placeholder="მაგ: 1200">
+            </div>
+
+            <div class="form-group">
+                <label for="status">სტატუსი:</label>
+                <select id="status">
+                    <option value="ხელმისაწვდომია">ხელმისაწვდომია</option>
+                    <option value="არ არის ხელმისაწვდომი">არ არის ხელმისაწვდომი</option>
+                </select>
+            </div>
+
+            <button type="submit" id="add-btn">წიგნის დამატება</button>
+        </form>
+
+        <!-- წიგნების სია -->
+        <div class="card">
+            <h2>წიგნების სია</h2>
+            <div id="books-list" class="books-grid"></div>
+        </div>
+    </div>
+
+    <!-- კომპილირებული JS ფაილის მიერთება dist საქაღალდიდან -->
+    <script src="dist/app.js"></script>
+</body>
+</html>
