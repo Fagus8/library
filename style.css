@@ -120,3 +120,54 @@ button:hover {
     background-color: #f8d7da;
     color: #721c24;
 }
+.cancel-btn {
+    display: none;
+    margin-top: 10px;
+    background-color: #95a5a6;
+}
+
+.cancel-btn:hover {
+    background-color: #7f8c8d;
+}
+
+.book-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 12px;
+}
+
+.book-actions button {
+    flex: 1;
+    padding: 8px 10px;
+    font-size: 12px;
+}
+
+.toggle-btn {
+    background-color: #f39c12;
+}
+
+.toggle-btn:hover {
+    background-color: #d68910;
+}
+
+.edit-btn {
+    background-color: #27ae60;
+}
+
+.edit-btn:hover {
+    background-color: #1e8449;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+.empty-message {
+    color: #777;
+    font-style: italic;
+}
